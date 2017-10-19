@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.slack.norton.managemoney.R;
 import com.slack.norton.managemoney.data.Money;
+import com.slack.norton.managemoney.util.Convert;
 
 import java.util.ArrayList;
 
@@ -44,8 +45,8 @@ public class ListMoney extends ArrayAdapter<Money> {
         TextView moneyView = (TextView) convertView.findViewById(R.id.item_list_money);
         Money money = list.get(position);
         nameView.setText(money.getName());
-        dateView.setText(money.getDate().toString());
-        moneyView.setText(String.valueOf(money.getCount()));
+        dateView.setText(money.date());
+        moneyView.setText(Convert.money( money.getCount()));
         return convertView;
     }
 

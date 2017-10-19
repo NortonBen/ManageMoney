@@ -1,7 +1,23 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="name_item_size_list_view">20dp</dimen>
-    <dimen name="date_item_size_list_view">16dp</dimen>
-    <dimen name="money_item_size_list_view">30dp</dimen>
+    <dimen name="name_item_size_list_view">14dp</dimen>
+    <dimen name="date_item_size_list_view">10dp</dimen>
+    <dimen name="money_item_size_list_view">18dp</dimen>
     <dimen name="name_margin_item_size_list_view">10dp</dimen>
+    <dimen name="main_ts_title_des">15dp</dimen>
+    <dimen name="main_frag_size">330dp</dimen>
+    <dimen name="add_label_name">20dp</dimen>
+    <dimen name="add_label_error">10dp</dimen>
+    <dimen name="add_label_view_label">17dp</dimen>
+    <dimen name="add_label_view">20dp</dimen>
+    <dimen name="detail_magrin_top_label">10dp</dimen>
+    <dimen name="detail_magrin_bottom_label">5dp</dimen>
+    <dimen name="detail_magrin_left_label_view">5dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">140dp</dimen>
 </resources>

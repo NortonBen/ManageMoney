@@ -1,5 +1,8 @@
 package com.slack.norton.managemoney.data;
 
+import android.util.Log;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -12,10 +15,13 @@ public class Money {
     int type = 0;
     String name;
     String note;
-    float count = 0;
+    int count = 0;
     Date date = new Date();
 
-    public Money(int id, int type, String name, String note, float count, Date date) {
+    public Money() {
+    }
+
+    public Money(int id, int type, String name, String note, int count, Date date) {
         this.id = id;
         this.type = type;
         this.name = name;
@@ -24,14 +30,14 @@ public class Money {
         this.date = date;
     }
 
-    public Money(int type, String name, String note, float count) {
+    public Money(int type, String name, String note, int count) {
         this.type = type;
         this.name = name;
         this.note = note;
         this.count = count;
     }
 
-    public Money(int type, String name, String note, float count, Date date) {
+    public Money(int type, String name, String note, int count, Date date) {
         this.type = type;
         this.name = name;
         this.note = note;
@@ -71,11 +77,11 @@ public class Money {
         this.note = note;
     }
 
-    public float getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(float count) {
+    public void setCount(int count) {
         this.count = count;
     }
 
@@ -85,5 +91,25 @@ public class Money {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String date(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return  sdf.format(date);
+    }
+
+    public void setStringDate(String date){
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            this.date = sdf.parse(date);
+        } catch (Exception e) {
+            Log.d("convert date error", date);
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return  String.format("{ id: %s , name: %s, note: %s, type: %s, date: %s, money: %s }",id, name,note, type, date(), count);
     }
 }

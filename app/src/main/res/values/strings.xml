@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">ManageMoney</string>
+    <string name="app_name">Quản Lý Chi Tiêu</string>
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_scrolling">MainScrollingActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
 </resources>

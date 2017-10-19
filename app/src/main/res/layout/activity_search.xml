@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slack.norton.managemoney.MainActivity">
+
+
+    <LinearLayout
+
+        android:id="@+id/main_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorMainToobar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#0d7bba"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/search_back"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:drawable/ic_menu_revert" />
+
+            <TextView
+                android:id="@+id/search_tilte"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Tổng chi trong tháng :"
+                android:textColor="#fff"
+                android:textSize="@dimen/main_ts_title_des" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:text="Tổng chi trong tháng :"
+                    android:textSize="@dimen/main_ts_title_des" />
+
+                <TextView
+                    android:id="@+id/main_lable_prince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1tr"
+                    android:textSize="@dimen/main_ts_title_des" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/man_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_layout_top">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart1"
+                android:layout_width="@dimen/main_frag_size"
+                android:layout_height="@dimen/main_frag_size"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Danh sách chi tiêu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.slack.norton.managemoney.Containers.NonScrollListView
+                    android:id="@+id/main_lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.slack.norton.managemoney.Containers.NonScrollListView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

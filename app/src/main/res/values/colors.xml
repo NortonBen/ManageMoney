@@ -2,5 +2,10 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorMainToobar">#1ab394</color>
+    <color name="colorTvError">#a70000</color>
+    <color name="colorLvname">#060606</color>
+    <color name="colorLvmoney">#85bc34</color>
+    <color name="colorLvdate">#2e2c2c</color>
 </resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:text="Chọn Loại Chi Tiêu: "
+        android:textSize="@dimen/add_label_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/add_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="invisible"
+        android:text="lỗi Chư chọn"
+        android:textColor="@color/colorTvError"
+        android:id="@+id/add_spinner_error"
+        android:textSize="@dimen/add_label_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Tên Khoản Chi:"
+        android:textSize="@dimen/add_label_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/add_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="lỗi nhập tên"
+        android:visibility="invisible"
+        android:textColor="@color/colorTvError"
+        android:id="@+id/add_edit_name_error"
+        android:textSize="@dimen/add_label_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Ghi Chú: "
+        android:textSize="@dimen/add_label_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/add_edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:text="lỗi ghi chú"
+        android:visibility="invisible"
+        android:textColor="@color/colorTvError"
+        android:id="@+id/add_edit_note_error"
+        android:textSize="@dimen/add_label_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Ngày: "
+        android:textSize="@dimen/add_label_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/add_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:text="lỗi ghi chú"
+        android:visibility="invisible"
+        android:textColor="@color/colorTvError"
+        android:id="@+id/add_date_error"
+        android:textSize="@dimen/add_label_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Số Tiền: "
+        android:textSize="@dimen/add_label_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/add_edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:text="lỗi chưa nhập tiền"
+        android:visibility="invisible"
+        android:textColor="@color/colorTvError"
+        android:id="@+id/add_edit_price_error"
+        android:textSize="@dimen/add_label_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/add_btn_save"
+            android:text="Lưu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/add_btn_cancel"
+            android:text="Hủy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

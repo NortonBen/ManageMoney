@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:text="edit"
+            android:id="@+id/detail_btn_edit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="del"
+            android:id="@+id/detail_btn_del"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="back"
+            android:id="@+id/detail_btn_back"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_magrin_bottom_label"
+            android:layout_marginTop="@dimen/detail_magrin_top_label"
+            android:text="Loại Chi Tiêu: "
+            android:textSize="@dimen/add_label_view_label"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/detail_type_view"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/detail_magrin_left_label_view"
+            android:layout_height="wrap_content"
+            android:text="lỗi Chư chọn"
+            android:textSize="@dimen/add_label_view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_magrin_bottom_label"
+            android:layout_marginTop="@dimen/detail_magrin_top_label"
+            android:text="Tên Khoản Chi: "
+            android:textSize="@dimen/add_label_view_label"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/detail_name_view"
+            android:layout_marginLeft="@dimen/detail_magrin_left_label_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lỗi Chư chọn"
+            android:textSize="@dimen/add_label_view" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_magrin_bottom_label"
+            android:layout_marginTop="@dimen/detail_magrin_top_label"
+            android:text="Ngày Khoản Chi: "
+            android:textSize="@dimen/add_label_view_label"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/detail_date_view"
+            android:layout_marginLeft="@dimen/detail_magrin_left_label_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1/1/2000"
+            android:textSize="@dimen/add_label_view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_magrin_bottom_label"
+            android:layout_marginTop="@dimen/detail_magrin_top_label"
+            android:text="Sô Tiền Chi: "
+            android:textSize="@dimen/add_label_view_label"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/detail_price_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/detail_magrin_left_label_view"
+            android:text="1000000"
+            android:textSize="@dimen/add_label_view" />
+
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/detail_layout_note"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/detail_magrin_bottom_label"
+                android:layout_marginTop="@dimen/detail_magrin_top_label"
+                android:text="Ghi Chú: "
+                android:textSize="@dimen/add_label_view_label"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/detail_note_view"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/detail_magrin_left_label_view"
+                android:layout_height="wrap_content"
+                android:text="lỗi Chư chọn"
+                android:textSize="@dimen/add_label_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

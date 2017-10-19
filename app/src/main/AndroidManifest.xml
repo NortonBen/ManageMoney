@@ -19,6 +19,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TypeManageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DetailMonthActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ManageMoneyActivity" />
+        <activity android:name=".ListMonthSearchActivity"></activity>
     </application>
 
 </manifest>
